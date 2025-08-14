@@ -7,7 +7,7 @@
     "build": "vite build",
     "dev": "vite --host 0.0.0.0 --port 3001 --clearScreen false",
     "check-types": "tsc --noEmit",
-    "typecheck": "tsc",
+    "typecheck": "tsc --noEmit",
     "lint": "eslint src/ --fix",
     "test": "vitest --watch=false",
     "test:coverage": "vitest --coverage.enabled --coverage.clean=true --watch=false",
