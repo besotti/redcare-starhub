@@ -24,10 +24,6 @@ npm install
 npm run dev
 ```
 
-```
-VITE_API_BASE=https://api.github.com
-```
-
 ## Code Quality & Testing
 
 - TypeScript strict mode is used (`tsc --noEmit`)
