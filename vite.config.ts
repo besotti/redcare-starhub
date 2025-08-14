@@ -6,6 +6,7 @@ import { configDefaults } from 'vitest/config';
 export default defineConfig({
   plugins: [react()],
   test: {
+    setupFiles: ['./src/setupTest.ts'],
     globals: true,
     environment: 'jsdom',
     coverage: {
