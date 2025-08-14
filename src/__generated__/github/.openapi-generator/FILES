@@ -1,0 +1,7 @@
+apis/DefaultApi.ts
+apis/index.ts
+index.ts
+models/IRepository.ts
+models/IRepositorySearchResponse.ts
+models/index.ts
+runtime.ts

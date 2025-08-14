@@ -1,9 +1,10 @@
+import { BASE_PATH } from '@constants/routes';
+import { queryClient } from '@root/queryClient';
+import { routes } from '@root/routes';
+import { QueryClientProvider } from '@tanstack/react-query';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router';
-
-import { BASE_PATH } from './constants/routes.ts';
-import { routes } from './routes.tsx';
 
 const container = document.querySelector('#root');
 const root = createRoot(container!);
@@ -15,6 +16,8 @@ document.title = 'Redcare Starhub';
 
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />;
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />;
+    </QueryClientProvider>
   </React.StrictMode>
 );

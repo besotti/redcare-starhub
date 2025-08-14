@@ -1,8 +1,7 @@
+import { BASE_PATH, ROUTE_REPOSITORIES } from '@constants/routes';
+import { ErrorPage } from '@pages/Error/Error';
+import { RepositoriesPage } from '@pages/Repositories/Repositories';
 import { createRoutesFromElements, Navigate, Route } from 'react-router';
-
-import { BASE_PATH, ROUTE_REPOSITORIES } from './constants/routes.ts';
-import { ErrorPage } from './pages/Error/Error.tsx';
-import { RepositoriesPage } from './pages/Repositories/Repositories.tsx';
 
 export const routes = createRoutesFromElements(
   <Route path={BASE_PATH} errorElement={<ErrorPage />}>

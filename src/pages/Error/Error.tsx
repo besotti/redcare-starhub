@@ -1,9 +1,8 @@
+import { Layout } from '@components/Layouts';
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 import { Box, Button, Typography } from '@mui/material';
 import type React from 'react';
 import { useNavigate } from 'react-router';
-
-import { Layout } from '../../components/Layouts';
 
 export const ErrorPage: React.FC = () => {
   const navigate = useNavigate();

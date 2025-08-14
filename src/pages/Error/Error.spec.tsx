@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import { renderTest } from '../../__utils__/renderTest.tsx';
+import { renderTest } from '../../__utils__/renderTest';
 
 describe('Error', () => {
   it('should render a error page', async () => {
