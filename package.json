@@ -1,0 +1,40 @@
+{
+  "name": "redcare-starhub",
+  "version": "0.0.1",
+  "description": "List trending GitHub repositories and allow starring and filtering",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite --host 0.0.0.0 --port 3001 --clearScreen false",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src/ --fix",
+    "test": "vitest --watch=false",
+    "test:coverage": "vitest --coverage.enabled --coverage.clean=true --watch=false"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/besotti/redcare-starhub.git"
+  },
+  "author": "Benedikt Sottong <benediktsommer@aol.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/besotti/redcare-starhub/issues"
+  },
+  "homepage": "https://github.com/besotti/redcare-starhub#readme",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "eslint": "9.30.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.1",
+    "eslint-plugin-react": "7.37.5",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "globals": "^16.3.0",
+    "jsdom": "^26.1.0",
+    "prettier": "^3.6.2",
+    "typescript": "5.8.2",
+    "typescript-eslint": "8.35.1",
+    "vite": "^7.1.2",
+    "vitest": "^3.2.4"
+  }
+}
